@@ -1,0 +1,62 @@
+minikube service myapp
+kubectl get svc
+kubectl get pods
+kubectl get pods --all-namespaces
+kubectl apply -f deployment.yml
+kubectl get nodes
+minikube start --nodes=2
+minikube delete
+minikube status
+docker ps
+minikube version
+
+kubectl delete deployment --all
+kubectl drain <node name>
+kubectl drain <node name> --force
+
+
+minikube delete --all 
+kubectl delete pods,deployments -A --all
+kubectl delete replicaset --all
+
+kubectl create namespace custom-namespace
+kubectl create -f deployment.yaml --namespace=custom-namespace
+kubectl delete namespaces custom-namespace
+
+kubectl get all -n my-ns
+
+
+minikube start
+minikube dashboard
+kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+kubectl get deployments
+kubectl get pods
+
+kubectl get events
+kubectl config view
+
+kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+kubectl get services
+minikube service hello-node
+
+minikube addons list
+minikube addons enable metrics-server
+kubectl get pod,svc -n kube-system
+
+minikube addons disable metrics-server
+
+
+kubectl delete service hello-node
+kubectl delete deployment hello-node
+
+minikube stop
+minikube delete
+
+
+kubectl cluster-info
+
+
+
+kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+kubectl get deployments
+kubectl proxy
