@@ -1,8 +1,12 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Getter
 @Entity
 @Table(name = "pages")
 public class Page implements Serializable {
@@ -15,6 +19,7 @@ public class Page implements Serializable {
     private String content;
     private String chapter;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "book_id", nullable = false)
     private Book book;

@@ -1,12 +1,15 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToMany;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
 @Entity
 @Table(name = "books")
-public class Book implements Serializable {
+@Getter
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +21,7 @@ public class Book implements Serializable {
     @Column(unique = true)
     private String isbn;
 
-    @OneToMany(mappedBy = "book", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Page> pages;
 
     public Book() {
