@@ -1,6 +1,7 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToMany;
 
 import lombok.Getter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -9,6 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name = "books")
 @Getter
+@ToString
 public class Book {
 
     @Id
@@ -34,4 +36,5 @@ public class Book {
     }
 
     // getters and setters, equals(), toString() .... (omitted for brevity)
+
 }

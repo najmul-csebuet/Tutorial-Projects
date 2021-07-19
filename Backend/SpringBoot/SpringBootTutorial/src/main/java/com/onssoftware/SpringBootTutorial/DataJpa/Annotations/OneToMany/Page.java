@@ -2,6 +2,7 @@ package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;

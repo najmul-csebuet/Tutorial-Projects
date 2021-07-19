@@ -7,17 +7,17 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 @Component
-public class InitDb {
+public class InitDbOneToMany {
     @Bean
-    public CommandLineRunner mappingDemo(BookRepository bookRepository,
+    public CommandLineRunner oneToManyMappingDemo(BookRepository bookRepository,
                                          PageRepository pageRepository) {
         return args -> {
 
-            Optional<Book> byId = bookRepository.findById(1l);
+/*            Optional<Book> byId = bookRepository.findById(1l);
             Book book = byId.get();
-            System.out.println(book);
-            /*// create a new book
-            Book book = new Book("Java 101", "John Doe", "123456");
+            System.out.println(book);*/
+            // create a new book
+          /*  Book book = new Book("Java 101", "John Doe", "123456");
 
             // save the book
             bookRepository.save(book);
