@@ -1,6 +1,8 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.ManyToMany;
 
 import lombok.Getter;
+import lombok.Setter;
+import org.springframework.context.annotation.Profile;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -8,8 +10,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Getter
+@Setter
 @Entity
 @Table(name = "students")
+@Profile("ManyToMany")
 public class Student implements Serializable {
 
     @Id
@@ -20,14 +24,14 @@ public class Student implements Serializable {
     private int age;
     private String grade;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-    @JoinTable(name = "students_courses",
-            joinColumns = {
-                    @JoinColumn(name = "student_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)},
-            inverseJoinColumns = {
-                    @JoinColumn(name = "course_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)})
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+//    @JoinTable(name = "students_courses",
+//            joinColumns = {
+//                    @JoinColumn(name = "student_id", referencedColumnName = "id",
+//                            nullable = false, updatable = false)},
+//            inverseJoinColumns = {
+//                    @JoinColumn(name = "course_id", referencedColumnName = "id",
+//                            nullable = false, updatable = false)})
     private Set<Course> courses = new HashSet<>();
 
     public Student() {

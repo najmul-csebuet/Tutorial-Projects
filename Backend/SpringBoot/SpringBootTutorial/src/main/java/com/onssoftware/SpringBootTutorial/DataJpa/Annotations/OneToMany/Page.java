@@ -3,6 +3,7 @@ package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToMany;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.ToString;
+import org.springframework.context.annotation.Profile;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Getter
 @Entity
 @Table(name = "pages")
+@Profile("OneToMany")
 public class Page implements Serializable {
 
     @Id

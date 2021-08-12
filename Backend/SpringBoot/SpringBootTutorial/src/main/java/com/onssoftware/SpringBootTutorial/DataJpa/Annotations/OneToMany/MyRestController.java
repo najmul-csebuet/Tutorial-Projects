@@ -1,10 +1,12 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToMany;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Profile("OneToMany")
 public class MyRestController {
 
     private final BookRepository bookRepository;

@@ -2,6 +2,7 @@ package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToOne;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.context.annotation.Profile;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Table(name = "addresses")
+@Profile("OneToOne")
 public class Address implements Serializable {
 
     @Id

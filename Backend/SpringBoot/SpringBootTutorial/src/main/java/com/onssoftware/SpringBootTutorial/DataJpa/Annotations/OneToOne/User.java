@@ -2,6 +2,7 @@ package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToOne;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.context.annotation.Profile;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Table(name = "users")
+@Profile("OneToOne")
 public class User implements Serializable {
 
     @Id
@@ -20,8 +22,7 @@ public class User implements Serializable {
     private String email;
     private String password;
 
-    @OneToOne(mappedBy = "user", fetch = FetchType.LAZY,
-            cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Address address;
 
     public User() {
