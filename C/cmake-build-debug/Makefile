@@ -57,10 +57,10 @@ RM = /snap/clion/162/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/najmul-csebuet/Work/Tutorial-Projects/CPP
+CMAKE_SOURCE_DIR = /home/najmul-csebuet/Work/Tutorial-Projects/C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/najmul-csebuet/Work/Tutorial-Projects/C/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/najmul-csebuet/Work/Tutorial-Projects/C/cmake-build-debug/CMakeFiles /home/najmul-csebuet/Work/Tutorial-Projects/C/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/najmul-csebuet/Work/Tutorial-Projects/C/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,65 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CPP
+# Target rules for targets named C
 
 # Build rule for target.
-CPP: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CPP
-.PHONY : CPP
+C : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 C
+.PHONY : C
 
 # fast build rule for target.
-CPP/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/build
-.PHONY : CPP/fast
+C/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/build
+.PHONY : C/fast
 
-Stack.o: Stack.cpp.o
-.PHONY : Stack.o
-
-# target to build an object file
-Stack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/Stack.cpp.o
-.PHONY : Stack.cpp.o
-
-Stack.i: Stack.cpp.i
-.PHONY : Stack.i
-
-# target to preprocess a source file
-Stack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/Stack.cpp.i
-.PHONY : Stack.cpp.i
-
-Stack.s: Stack.cpp.s
-.PHONY : Stack.s
-
-# target to generate assembly for a file
-Stack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/Stack.cpp.s
-.PHONY : Stack.cpp.s
-
-Test.o: Test.cpp.o
-.PHONY : Test.o
+main.o: main.c.o
+.PHONY : main.o
 
 # target to build an object file
-Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/Test.cpp.o
-.PHONY : Test.cpp.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/main.c.o
+.PHONY : main.c.o
 
-Test.i: Test.cpp.i
-.PHONY : Test.i
+main.i: main.c.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/Test.cpp.i
-.PHONY : Test.cpp.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/main.c.i
+.PHONY : main.c.i
 
-Test.s: Test.cpp.s
-.PHONY : Test.s
+main.s: main.c.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/Test.cpp.s
-.PHONY : Test.cpp.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -185,13 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CPP"
-	@echo "... Stack.o"
-	@echo "... Stack.i"
-	@echo "... Stack.s"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
+	@echo "... C"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

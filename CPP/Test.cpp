@@ -26,6 +26,20 @@ template<>
 string myMax(string a, string b) {
     cout << "In template special\n";
     cout << a << ", " << b << endl;
+    return "";
+}
+
+
+int refTest(int &a) {
+    cout << a << endl;
+    a = 2;
+    return 0;
+}
+
+int refTest1(int *a) {
+    cout << *a << endl;
+    *a = 2;
+    return 0;
 }
 
 int main() {
@@ -67,6 +81,14 @@ int main() {
     MultiTypeGenerics<char, char> multiTypeGenerics1;
     MultiTypeGenerics<int, double> multiTypeGenerics2;
     MultiTypeGenerics<long, string> multiTypeGenerics3;
+
+    int aa = 10;
+    refTest(aa);
+    cout << aa << endl;
+
+    int aa1 = 102;
+    refTest1(&aa1);
+    cout << aa1 << endl;
 
     return 0;
 }

@@ -53,10 +53,10 @@ RM = /snap/clion/162/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/najmul/Work/Tutorial-Projects/CPP
+CMAKE_SOURCE_DIR = /home/najmul-csebuet/Work/Tutorial-Projects/CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CPP.dir/depend.make
@@ -68,29 +68,29 @@ include CMakeFiles/CPP.dir/flags.make
 
 CMakeFiles/CPP.dir/Test.cpp.o: CMakeFiles/CPP.dir/flags.make
 CMakeFiles/CPP.dir/Test.cpp.o: ../Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP.dir/Test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPP.dir/Test.cpp.o -c /home/najmul/Work/Tutorial-Projects/CPP/Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP.dir/Test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPP.dir/Test.cpp.o -c /home/najmul-csebuet/Work/Tutorial-Projects/CPP/Test.cpp
 
 CMakeFiles/CPP.dir/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPP.dir/Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/najmul/Work/Tutorial-Projects/CPP/Test.cpp > CMakeFiles/CPP.dir/Test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/najmul-csebuet/Work/Tutorial-Projects/CPP/Test.cpp > CMakeFiles/CPP.dir/Test.cpp.i
 
 CMakeFiles/CPP.dir/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPP.dir/Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/najmul/Work/Tutorial-Projects/CPP/Test.cpp -o CMakeFiles/CPP.dir/Test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/najmul-csebuet/Work/Tutorial-Projects/CPP/Test.cpp -o CMakeFiles/CPP.dir/Test.cpp.s
 
 CMakeFiles/CPP.dir/Stack.cpp.o: CMakeFiles/CPP.dir/flags.make
 CMakeFiles/CPP.dir/Stack.cpp.o: ../Stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPP.dir/Stack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPP.dir/Stack.cpp.o -c /home/najmul/Work/Tutorial-Projects/CPP/Stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPP.dir/Stack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPP.dir/Stack.cpp.o -c /home/najmul-csebuet/Work/Tutorial-Projects/CPP/Stack.cpp
 
 CMakeFiles/CPP.dir/Stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPP.dir/Stack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/najmul/Work/Tutorial-Projects/CPP/Stack.cpp > CMakeFiles/CPP.dir/Stack.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/najmul-csebuet/Work/Tutorial-Projects/CPP/Stack.cpp > CMakeFiles/CPP.dir/Stack.cpp.i
 
 CMakeFiles/CPP.dir/Stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPP.dir/Stack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/najmul/Work/Tutorial-Projects/CPP/Stack.cpp -o CMakeFiles/CPP.dir/Stack.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/najmul-csebuet/Work/Tutorial-Projects/CPP/Stack.cpp -o CMakeFiles/CPP.dir/Stack.cpp.s
 
 # Object files for target CPP
 CPP_OBJECTS = \
@@ -104,7 +104,7 @@ CPP: CMakeFiles/CPP.dir/Test.cpp.o
 CPP: CMakeFiles/CPP.dir/Stack.cpp.o
 CPP: CMakeFiles/CPP.dir/build.make
 CPP: CMakeFiles/CPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,6 +116,6 @@ CMakeFiles/CPP.dir/clean:
 .PHONY : CMakeFiles/CPP.dir/clean
 
 CMakeFiles/CPP.dir/depend:
-	cd /home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/najmul/Work/Tutorial-Projects/CPP /home/najmul/Work/Tutorial-Projects/CPP /home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug /home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug /home/najmul/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles/CPP.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/najmul-csebuet/Work/Tutorial-Projects/CPP /home/najmul-csebuet/Work/Tutorial-Projects/CPP /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug /home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/CMakeFiles/CPP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CPP.dir/depend
 

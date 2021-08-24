@@ -1,4 +1,4 @@
-# Install script for directory: /home/najmul-csebuet/Work/Tutorial-Projects/CPP
+# Install script for directory: /home/najmul-csebuet/Work/Tutorial-Projects/C
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/najmul-csebuet/Work/Tutorial-Projects/CPP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/najmul-csebuet/Work/Tutorial-Projects/C/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
