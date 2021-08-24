@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/najmul/Work/Tutorial-Projects/CPP/MultiTypeGenerics.h
+
+/home/najmul/Work/Tutorial-Projects/CPP/MyArray.h
+
+/home/najmul/Work/Tutorial-Projects/CPP/Stack.h
+vector
+-
+
+/home/najmul/Work/Tutorial-Projects/CPP/Test.cpp
+bits/stdc++.h
+-
+Stack.h
+/home/najmul/Work/Tutorial-Projects/CPP/Stack.h
+MyArray.h
+/home/najmul/Work/Tutorial-Projects/CPP/MyArray.h
+MultiTypeGenerics.h
+/home/najmul/Work/Tutorial-Projects/CPP/MultiTypeGenerics.h
+
