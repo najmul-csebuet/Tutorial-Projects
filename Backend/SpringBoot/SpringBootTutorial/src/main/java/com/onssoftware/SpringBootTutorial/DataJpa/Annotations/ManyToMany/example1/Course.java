@@ -1,4 +1,4 @@
-package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.ManyToMany;
+package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.ManyToMany.example1;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;

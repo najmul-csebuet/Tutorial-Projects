@@ -1,7 +1,6 @@
-package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.ManyToMany;
+package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.ManyToMany.example1;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
