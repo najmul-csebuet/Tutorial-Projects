@@ -1,7 +1,12 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.OneToOne;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface AddressRepository extends CrudRepository<Address, Long> {
+@Profile("OneToOne")
+@Repository
+public interface AddressRepository extends JpaRepository<Address, Long> {
 
 }

@@ -5,13 +5,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @Profile("OneToOne")
 public class InitDbOneToOne {
-    //@Bean
-    public CommandLineRunner oneToOneMappingDemo(UserRepository userRepository) {
+    @Bean
+    public CommandLineRunner oneToOneMappingDemo(UserRepository userRepository, AddressRepository addressRepository) {
         return args -> {
-            // create an user instance
+/*            // create an user instance
             User user = new User("John Doe", "john.doe@example.com", "1234abcd");
 
             // create an address instance
@@ -26,11 +28,16 @@ public class InitDbOneToOne {
 
             // save the parent
             // which will save the child (address) as well
-            userRepository.save(user);
+            userRepository.save(user);*/
+
+            User user1 = userRepository.findAll().get(0);
+            userRepository.delete(user1);
+            //Address address1 = addressRepository.findAll().get(0);
+            System.out.println();
         };
     }
 
-    @Bean
+//    @Bean
     public CommandLineRunner oneToOneMappingDemo1(UserRepository userRepository, AddressRepository addressRepository) {
         return args -> {
             // create an user instance

@@ -9,9 +9,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Getter
-@Entity
+//@Entity
 @Table(name = "pages")
-@Profile("OneToMany")
 public class Page implements Serializable {
 
     @Id

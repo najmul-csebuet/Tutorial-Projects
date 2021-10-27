@@ -19,7 +19,7 @@ public class TestConfigurationExampleAppTests {
     private DataService dataService;
 
     @Test
-    @DynamicPropertySource()
+    //@DynamicPropertySource()
     void contextLoads() {
     }
 }

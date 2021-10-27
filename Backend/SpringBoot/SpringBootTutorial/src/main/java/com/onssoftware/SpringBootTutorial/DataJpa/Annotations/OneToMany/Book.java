@@ -10,12 +10,11 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+//@Entity
 @Table(name = "books")
 @Getter
 @Setter
 @ToString
-@Profile("OneToMany")
 public class Book {
 
     @Id

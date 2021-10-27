@@ -12,9 +12,8 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+//@Entity
 @Table(name = "courses")
-@Profile("ManyToMany")
 public class Course implements Serializable {
 
     @Id

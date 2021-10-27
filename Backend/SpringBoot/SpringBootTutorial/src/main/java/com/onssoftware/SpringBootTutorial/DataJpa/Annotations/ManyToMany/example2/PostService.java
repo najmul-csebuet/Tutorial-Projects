@@ -1,5 +1,6 @@
 package com.onssoftware.SpringBootTutorial.DataJpa.Annotations.ManyToMany.example2;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 
 @Service
+@Profile("ManyToMany")
 public class PostService {
 
     private final PostRepository postRepository;
