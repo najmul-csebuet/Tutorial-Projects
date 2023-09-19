@@ -85,6 +85,9 @@ class MegaGreeter
   end
 end
 
+# __FILE__ contains the current file name as a magic variable
+# $0 is file name as argument
+
 if __FILE__ == $0
   puts "Testing MegaGreeter"
   mg = MegaGreeter.new
