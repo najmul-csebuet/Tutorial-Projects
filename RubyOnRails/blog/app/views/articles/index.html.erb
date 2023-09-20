@@ -6,6 +6,14 @@
             <a href = "/articles/<%= article.id %>">
                 <%= article.title %>
             </a>
+            <br/>
+            <a href = "<%= article_path(article) %>">
+                <%= article.title %>
+            </a>
+            <br/>
+            <a href = "<%= article_url(article) %>">
+                <%= article.title %>
+            </a>
         </li>
     <% end %>
 </ul>
